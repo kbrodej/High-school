@@ -1,0 +1,37 @@
+SELECT * FROM `cv_answers` 
+INNER JOIN cv_questions ON cv_answers.id_cv_question=cv_questions.id_cv_questions
+INNER JOIN cv as c on cv_answers.id_cv=c.id_cv
+INNER JOIN user as u on c.id_user=u.id_user
+WHERE u.id_user=13
+
+
+
+
+
+
+SELECT * FROM `cv_answers`
+INNER JOIN cv_questions ON cv_answers.id_cv_questions=cv_questions.id_cv_questions
+WHERE 1
+
+
+INSERT INTO `cv_questions` (`cv_question`, `id_cv_type`) VALUES
+('name', 1),
+('surname', 1),
+('adress', 1),
+('phone', 1),
+('email', 1),
+('gender', 1),
+('birth date', 1),
+('nationality', 1),
+('job applied', 1),
+('mother tounge', 1),
+('qualification awarded', 1),
+('communication skills', 1),
+('managerial skills', 1),
+('computer skills', 1),
+('other skills', 1),
+('driving license', 1),
+('publications', 1),
+('presentations', 1),
+('projects', 1),
+('conferences', 1)
